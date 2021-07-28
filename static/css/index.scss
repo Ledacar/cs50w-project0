@@ -1,0 +1,566 @@
+$color-blue: rgb(4, 50, 255);
+$span-color: rgb(2, 18, 90);
+$colo-white: #fff;
+$color-black: #000;
+$color-dark: #222;
+$color-light: lightgray;
+$color-blueop: rgba(0,0,255,0.5);
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* nav style */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar img{
+    width: 70px;
+    height: 50px;
+    border-radius: 25%;
+    margin-right: 10px;
+}
+
+.navbar.sticky{
+    padding: 10px 0;
+    background: $color-blue;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: $colo-white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: $color-blue;
+}
+
+.navbar.sticky .logo a span{
+    transition: all 0.5s ease;
+    color: $span-color;
+}
+
+.navbar .logo a span:hover{
+    color: $span-color;
+}
+
+.navbar.sticky .logo a span:hover{
+    transition: all 0.5s ease;
+    color: $colo-white;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: $colo-white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: $color-blue;
+    transition: all 1s ease;
+    font-size: 20px;
+}
+
+.navbar.sticky .menu li a:hover{
+    transition: all 0.5s ease;
+    color: $colo-white;
+}
+
+/* meno btn */
+
+.menu-btn{
+    color: $colo-white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: $color-blueop;
+    left: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: $colo-white;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.scroll-up-btn:hover{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: $color-light;
+    left: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: $color-blue;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;    
+}
+
+/* home section */
+.home{
+    display: flex;
+    background: url("../png/xccc.png") no-repeat center;
+    height: 100vh;
+    color: $colo-white;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 50px;
+}
+
+.home .home-conten .text-1{
+    font-size: 27px;
+}
+
+.home .home-conten .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-conten .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-conten .text-3 span{    
+    color: $color-blue;
+    font-weight: 500;
+}
+
+/* aboutme start */
+section{
+   padding: 100px 0;
+}
+
+section .tittle{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .tittle::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: $color-black;
+    transform: translateX(-50%);
+}
+
+section .tittle::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: $color-blue;
+    padding: 5px;
+    background: $colo-white;
+    transform: translateX(-50%);
+}
+
+.about .tittle::after{
+    content: "¿Es importante?";
+}
+
+section .about-conten,
+.expe .expe-conten,
+.familiares .familiares-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-conten .left img{
+    height: 400px;
+    width: 400px;      
+    object-fit: cover;  
+    border-radius: 15px;
+}
+
+.about .about-conten .right{
+    width: 50%;
+}
+
+.about .about-conten .right .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about .about-conten .right .text span{
+    color: $color-blue;
+}
+
+.about .about-conten .right p{
+    text-align: justify;
+}
+
+.about .about-conten .right a{
+    display: inline-block;
+    background: $color-blue;
+    color: $colo-white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid $color-blue;
+    transition: all 0.5s ease;
+}
+
+.about .about-conten .right a:hover{
+    color: $color-blue;
+    background: none;
+
+}
+
+/* expe style */
+
+.expe, .fiesteros{
+    color: $colo-white;
+    background: $color-black;
+}
+
+.expe .tittle::before,
+.fiesteros .tittle::before{
+    background: $colo-white;
+}
+
+.expe .tittle::after,
+.fiesteros .tittle::after{
+    background: $color-black;
+    content: "Recomendados";
+}
+
+.expe .expe-conten .card{
+    width: calc(33% - 20px);
+    background: $color-dark;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-bottom: 30px;
+}
+
+.expe .expe-conten .card:hover{
+    background: $color-blue;
+}
+
+.expe .expe-conten .card .box{
+    transition: all 0.5s ease;
+}
+
+.expe .expe-conten .card:hover .box{
+    transform: scale(1.05);
+}
+
+.expe .expe-conten .card:hover a{
+    transform: scale(1.05);
+    color: $color-black;
+}
+
+.expe .expe-conten .card i{
+    font-size: 50px;
+    color: $color-blue;
+    text-align: center;
+    transition: color 0.5s ease;
+}
+
+.expe .expe-conten .card:hover i{
+    color: $colo-white;
+}
+
+.expe .expe-conten .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+/* familiar style */
+.familiares .tittle::after{
+    content: "Los mejores";
+}
+
+.familiares .familiares-content .column{
+    width: calc(50% - 30px);
+}
+
+.familiares .familiares-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}   
+
+
+.familiares .familiares-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $color-dark;
+    align-items: center;
+    border-radius: 2px;
+    padding: 10px 15px;
+    transition: all 0.5s ease;
+}
+
+.familiares .familiares-content .right img{
+    align-items: center;
+    justify-items: center;
+    width: 400px;
+    height: 260px;
+}
+
+/* fiesteros style */
+
+.fiesteros .tittle::after{
+    content: "Alguno de ellos";
+}
+
+.fiesteros .carsel .card{
+    background: $color-dark;
+    border-radius: 10px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.fiesteros .carsel .card:hover{
+    background: $color-blue;
+}
+
+.fiesteros .carsel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.fiesteros .carsel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.fiesteros .carsel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.fiesteros .carsel .card img{
+    height: 150px;
+    width: 250px;
+    object-fit: cover;    
+    border: 2px solid $color-blue;
+    transition: all 0.5s ease;
+}
+
+.fiesteros .carsel .card:hover img{
+    border-color: $colo-white;
+}
+
+/* footer style */
+footer{
+    background: $color-black;
+    padding: 20px 23px;
+    color: $colo-white;
+}
+
+footer span a{
+    color: $color-blue;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* responsive style */
+@media (max-width: 1300px){ 
+    .home .max-width{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1104px){ 
+    .about .about-conten .left img{
+        height: 350px;
+        width: 350px;      
+    }
+}
+
+@media (max-width: 991px){ 
+    .max-width{
+        padding: 0 50px
+    }
+}
+
+@media (max-width: 947px){ 
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: auto;
+        width: 100%;
+        left: 0;
+        top: -100%;
+        background: $color-dark;
+        text-align: center;
+        padding-top: 15px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .menu.active{
+        top: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-conten .text-2{
+        font-size: 70px;
+    }
+    
+    .home .home-conten .text-3{
+        font-size: 35px;
+    }
+    
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about .about-conten .column{
+        width: 100%;
+    }
+
+    .about .about-conten .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-conten .right{
+        flex: 100%;
+    }
+
+    .expe .expe-conten .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .familiares .familiares-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+}
+
+@media (max-width: 690px){ 
+    .max-width{
+        padding: 0 23px
+    }
+
+    .home .home-conten .text-2{
+        font-size: 60px;
+    }
+    
+    .home .home-conten .text-3{
+        font-size: 32px;
+    }
+    .expe .expe-conten .card,
+    .familiares .familiares-content .column{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){ 
+    .max-width{
+        padding: 0 23px
+    }
+
+    .home .home-conten .text-2{
+        font-size: 50px;
+    }
+    
+    .home .home-conten .text-3{
+        font-size: 27px;
+    }
+}
