@@ -37,7 +37,8 @@ html{
 .navbar img{
     width: 70px;
     height: 50px;
-    border-radius: 25%;
+    border:  solid 1px $color-black;
+    border-radius: 10%;
     margin-right: 10px;
 }
 
