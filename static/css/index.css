@@ -375,28 +375,36 @@ section .about-conten,
 
 .familiares .familiares-content .column {
   width: calc(50% - 30px);
+  margin-bottom: 50px;
 }
 
 .familiares .familiares-content .left .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 15px;
+  text-align: center;
 }
 
-.familiares .familiares-content .right .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.familiares .familiares-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.familiares .familiares-content .left img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #222;
-  align-items: center;
-  border-radius: 2px;
-  padding: 10px 15px;
+  justify-items: center;
+  width: 400px;
+  height: 260px;
+  margin-bottom: 15px;
+}
+
+.familiares .familiares-content .left img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -408,6 +416,14 @@ section .about-conten,
   justify-items: center;
   width: 400px;
   height: 260px;
+  margin-bottom: 15px;
+}
+
+.familiares .familiares-content .right img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /* fiesteros style */
@@ -569,6 +585,22 @@ footer span a {
   .familiares .familiares-content .column {
     width: 100%;
     margin-bottom: 35px;
+  }
+  .familiares .familiares-content .right img {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    width: 300px;
+    height: 200px;
+  }
+  .familiares .familiares-content .left img {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    width: 300px;
+    height: 200px;
   }
 }
 
