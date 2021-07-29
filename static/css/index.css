@@ -119,15 +119,15 @@ html {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: rgba(0, 0, 255, 0.5);
-  left: 30px;
+  background: rgba(34, 34, 34, 0.5);
+  left: -1px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
   color: #fff;
   z-index: 9999;
   font-size: 30px;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
@@ -139,15 +139,15 @@ html {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: lightgray;
-  left: 30px;
+  background: rgba(158, 157, 157, 0.349);
+  left: -1px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
   color: #0432ff;
   z-index: 9999;
   font-size: 30px;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
@@ -240,7 +240,8 @@ section .tittle::after {
 
 section .about-conten,
 .expe .expe-conten,
-.familiares .familiares-content {
+.familiares .familiares-content,
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,15 +491,101 @@ section .about-conten,
 
 /* footer style */
 footer {
-  background: #000;
+  background: #222222;
   padding: 20px 23px;
   color: #fff;
 }
 
-footer span a {
+footer h3 {
+  color: lightgray;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+footer i {
+  font-size: 30px;
+}
+
+footer .instagram {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(violet), color-stop(indigo), color-stop(green), color-stop(blue), color-stop(yellow), color-stop(orange), to(red));
+  background-image: linear-gradient(to top, violet, indigo, green, blue, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+footer .twitch {
+  color: #3d006e;
+}
+
+footer a {
   color: #0432ff;
   text-decoration: none;
   text-align: center;
+}
+
+footer a i {
+  margin-left: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+footer a i:hover {
+  -webkit-transform: scale(1.2) rotate(360deg);
+          transform: scale(1.2) rotate(360deg);
+}
+
+footer .column {
+  width: calc(50% - 30px);
+  margin-bottom: 50px;
+}
+
+footer .left .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#btn- a {
+  display: inline-block;
+  background: #0432ff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 40;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #0432ff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#btn- a:hover {
+  color: #0432ff;
+  background: none;
+}
+
+footer .footer-mini {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer .footer-mini span {
+  color: #0432ff;
+  font-weight: 600;
+}
+
+footer .footer-mini i {
+  font-size: 20px;
 }
 
 /* responsive style */
@@ -601,6 +688,10 @@ footer span a {
     justify-items: center;
     width: 300px;
     height: 200px;
+  }
+  footer .column {
+    width: 100%;
+    margin-bottom: 35px;
   }
 }
 
