@@ -515,7 +515,7 @@ footer .instagram {
 }
 
 footer .twitch {
-  color: #3d006e;
+  color: #55267c;
 }
 
 footer a {
@@ -590,8 +590,14 @@ footer .footer-mini i {
   font-size: 20px;
 }
 
+/*Bootstrap 4 modificado*/
 .card {
   margin-top: 15px;
+}
+
+#inicio img {
+  width: 100%;
+  border-radius: 10%;
 }
 
 /* responsive style */
@@ -727,5 +733,65 @@ footer .footer-mini i {
   .home .home-conten .text-3 {
     font-size: 27px;
   }
+}
+
+/*Selecion style*/
+p::-moz-selection {
+  background: #fff;
+  color: #0432ff;
+}
+p::selection {
+  background: #fff;
+  color: #0432ff;
+}
+
+footer p::-moz-selection {
+  background: #222;
+  color: #0432ff;
+}
+
+footer p::selection {
+  background: #222;
+  color: #0432ff;
+}
+
+.footer-mini p::-moz-selection {
+  background: #fff;
+  color: #0432ff;
+}
+
+.footer-mini p::selection {
+  background: #fff;
+  color: #0432ff;
+}
+
+h3::-moz-selection {
+  background: #222;
+  color: #0432ff;
+}
+
+h3::selection {
+  background: #222;
+  color: #0432ff;
+}
+
+.footer-mini::-moz-selection {
+  background: #222;
+  color: #0432ff;
+}
+
+.footer-mini::selection {
+  background: #222;
+  color: #0432ff;
+}
+
+.footer-mini span::-moz-selection {
+  background: #222;
+  color: #fff;
+}
+
+.footer-mini span::selection {
+  background: #222;
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

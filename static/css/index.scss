@@ -5,7 +5,7 @@ $color-black: #000;
 $color-dark: #222;
 $color-light: lightgray;
 $color-blueop: rgba(0,0,255,0.5);
-$color-pur: rgb(61, 0, 110);
+$color-pur: rgb(85, 38, 124);
 $color-darkop: rgba(34, 34, 34, 0.5);
 $color-lightop: rgba(158, 157, 157, 0.349);
 $color-footer: rgb(34, 34, 34);
@@ -547,8 +547,13 @@ footer .footer-mini i{
     font-size: 20px;
 }
 
+/*Bootstrap 4 modificado*/
 .card{
     margin-top: 15px;
+}
+#inicio img{
+    width: 100%;
+    border-radius: 10%;
 }
 
 /* responsive style */
@@ -694,4 +699,33 @@ footer .footer-mini i{
     .home .home-conten .text-3{
         font-size: 27px;
     }
+}
+/*Selecion style*/
+p::selection{
+    background:$colo-white;
+    color: $color-blue;
+}
+footer p::selection{
+    background:$color-dark;
+    color: $color-blue;
+}
+
+.footer-mini p::selection{
+    background:$colo-white;
+    color: $color-blue;
+}
+
+h3::selection{
+    background:$color-dark;
+    color: $color-blue;
+}
+
+.footer-mini::selection{
+    background:$color-dark;
+    color: $color-blue;
+}
+
+.footer-mini span::selection{
+    background:$color-dark;
+    color: $colo-white;
 }
