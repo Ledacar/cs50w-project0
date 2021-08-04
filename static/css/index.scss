@@ -518,13 +518,14 @@ footer .right .text{
     font-size: 15px;
     font-weight: 40;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin-left: 20px;
     border-radius: 10px;
     border: 1px solid $color-blue;
     transition: all 0.5s ease;
 }
 
 #btn- a:hover{
+    text-decoration: none;
     color: $color-blue;
     background: none;
 
@@ -543,6 +544,10 @@ footer .footer-mini span{
 
 footer .footer-mini i{
     font-size: 20px;
+}
+
+.card{
+    margin-top: 15px;
 }
 
 /* responsive style */
