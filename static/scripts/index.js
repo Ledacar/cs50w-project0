@@ -5,13 +5,29 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
+
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
+            $('.more-info').addClass("show");
         }else{
             $('.scroll-up-btn').removeClass("show");
+            $('.more-info').removeClass("show");
+            $('.navbar2').removeClass("menu2");
+            $('.more-info i').removeClass("menu2");
         }
     });
 
+    /* menur */ 
+    $('.more-info').click(function(){
+        $('.navbar2').toggleClass("menu2");
+        $('.more-info i').toggleClass("menu2");
+    });
+
+
+   /* window.onscroll = function() {
+        var y = window.scrollY;
+        console.log(y);
+      };*/
     /*scroll up btn*/
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});

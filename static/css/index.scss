@@ -5,6 +5,7 @@ $color-black: #000;
 $color-dark: #222;
 $color-light: lightgray;
 $color-blueop: rgba(0,0,255,0.5);
+$color-blueop2: rgba(0,0,255,0.7);
 $color-pur: rgb(85, 38, 124);
 $color-darkop: rgba(34, 34, 34, 0.5);
 $color-lightop: rgba(158, 157, 157, 0.349);
@@ -17,6 +18,7 @@ $color-footer: rgb(34, 34, 34);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 html{
@@ -30,6 +32,28 @@ html{
 }
 
 /* nav style */
+.navbar2{
+    width: 220px;
+    height: 25%;
+    background: $color-blueop2;
+    position: fixed;
+    top: 300px;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.menu2{
+    right: 0px;
+}
+
+.more-info i.menu2::before{
+    content: "\f00d";
+}
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -95,15 +119,33 @@ html{
     transition: color 0.3s ease;
 }
 
+
 .navbar .menu li a:hover{
     color: $color-blue;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     font-size: 20px;
 }
 
-.navbar.sticky .menu li a:hover{
-    transition: all 0.5s ease;
+.navbar2 .menu2 li{
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+}
+
+.navbar2 .menu2 li a{
+    display: block;
     color: $colo-white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+
+.navbar2 .menu2 li a:hover{
+    color: $color-blue;
+    transition: all 0.5s ease;
+    font-size: 20px;
 }
 
 /* meno btn */
@@ -114,6 +156,7 @@ html{
     cursor: pointer;
     display: none;
 }
+
 
 .scroll-up-btn{
     position: fixed;
@@ -154,6 +197,51 @@ html{
 }
 
 .scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;    
+}
+
+.more-info{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: $color-darkop;
+    right: -1px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: $colo-white;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+.more-info:hover{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: $color-lightop;
+    right: -1px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: $color-blue;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.more-info.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;    
@@ -548,16 +636,16 @@ footer .footer-mini i{
 }
 
 /*Bootstrap 4 modificado*/
-.card{
+.container .card{
     margin-top: 15px;
     height: 600px;
 }
 
-.card img{
+.container .card img{
     height: 250px;
 }
 
-.card-body{
+.container .card-body{
     overflow: auto;
 }
 
@@ -614,6 +702,12 @@ footer .footer-mini i{
 
     .navbar .menu li{
         display: block;
+    }
+
+    .navbar .menu li ul{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
     }
 
     .navbar .menu li a{
