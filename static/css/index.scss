@@ -126,6 +126,12 @@ html{
     font-size: 20px;
 }
 
+.navbar.sticky .menu li a:hover{
+    color: $colo-white;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
 .navbar2 .menu2 li{
     list-style: none;
     display: inline-block;

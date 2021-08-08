@@ -1,0 +1,45 @@
+$color-blue: rgb(4, 50, 255);
+$span-color: rgb(2, 18, 90);
+$colo-white: #fff;
+$color-black: #000;
+$color-dark: #222;
+$color-light: lightgray;
+$color-blueop: rgba(0,0,255,0.5);
+$color-blueop2: rgba(0,0,255,0.7);
+$color-pur: rgb(85, 38, 124);
+$color-darkop: rgba(34, 34, 34, 0.5);
+$color-lightop: rgba(158, 157, 157, 0.349);
+$color-footer: rgb(34, 34, 34);
+
+/* home section */
+.home{
+    display: flex;
+    background: url("../png/nacatamal.jpg") no-repeat center;
+    height: 100vh;
+    color: $colo-white;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 50px;
+}
+
+.home .home-conten .text-1{
+    font-size: 27px;
+}
+
+.home .home-conten .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-conten .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-conten .text-3 span{    
+    color: $color-blue;
+    font-weight: 500;
+}

@@ -1,0 +1,35 @@
+/* home section */
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../png/nacatamal.jpg") no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+}
+
+.home .max-width {
+  margin: auto 0 auto 50px;
+}
+
+.home .home-conten .text-1 {
+  font-size: 27px;
+}
+
+.home .home-conten .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-conten .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .home-conten .text-3 span {
+  color: #0432ff;
+  font-weight: 500;
+}
+/*# sourceMappingURL=gastronomia.css.map */
