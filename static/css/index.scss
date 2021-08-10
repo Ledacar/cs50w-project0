@@ -33,17 +33,17 @@ html{
 
 /* nav style */
 .navbar2{
-    width: 220px;
-    height: 25%;
-    background: $color-blueop2;
+    width: 270px;
+    height: 100%;
+    background: $color-dark;
     position: fixed;
-    top: 300px;
+    top: 0px;
     right: -300px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
-    z-index: 1000;
+    z-index: 998;
 }
 
 .menu2{
@@ -149,9 +149,10 @@ html{
 
 
 .navbar2 .menu2 li a:hover{
+    text-decoration: none;
     color: $color-blue;
     transition: all 0.5s ease;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 /* meno btn */
@@ -163,6 +164,12 @@ html{
     display: none;
 }
 
+.menu-btn2{
+    color: $colo-white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 
 .scroll-up-btn{
     position: fixed;
@@ -660,6 +667,35 @@ footer .footer-mini i{
     border-radius: 10%;
 }
 
+/* video */
+#massobre h3{
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+.video{
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video::after{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video-info{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 /* responsive style */
 @media (max-width: 1300px){ 
     .home .max-width{
