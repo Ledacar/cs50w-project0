@@ -12,14 +12,14 @@ $(document).ready(function(){
         }else{
             $('.scroll-up-btn').removeClass("show");
             $('.more-info').removeClass("show");
-            $('.navbar2').removeClass("menu2");
+            $('.submenu2').removeClass("menu2");
             $('.more-info i').removeClass("menu2");
         }
     });
 
     /* menur */ 
     $('.more-info').click(function(){
-        $('.navbar2').toggleClass("menu2");
+        $('.submenu2').toggleClass("menu2");
         $('.more-info i').toggleClass("menu2");
     });
 

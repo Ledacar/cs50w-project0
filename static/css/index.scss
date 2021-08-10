@@ -32,7 +32,7 @@ html{
 }
 
 /* nav style */
-.navbar2{
+.submenu2{
     width: 270px;
     height: 100%;
     background: $color-dark;
@@ -132,13 +132,13 @@ html{
     font-size: 20px;
 }
 
-.navbar2 .menu2 li{
+.submenu2 .menu2 li{
     list-style: none;
     display: inline-block;
     align-items: center;
 }
 
-.navbar2 .menu2 li a{
+.submenu2 .menu2 li a{
     display: block;
     color: $colo-white;
     font-size: 30px;
@@ -148,7 +148,7 @@ html{
 }
 
 
-.navbar2 .menu2 li a:hover{
+.submenu2 .menu2 li a:hover{
     text-decoration: none;
     color: $color-blue;
     transition: all 0.5s ease;
