@@ -652,7 +652,10 @@ footer .footer-mini i {
   .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
-    font-size: 25px;
+    font-size: 18px;
+  }
+  .navbar .menu li a:hover {
+    color: #0432ff !important;
   }
   .home .home-conten .text-2 {
     font-size: 70px;
