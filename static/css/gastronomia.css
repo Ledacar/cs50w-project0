@@ -443,11 +443,6 @@ tr:nth-child(even) {
   background: rgba(158, 157, 157, 0.349);
 }
 
-tr:hover td {
-  background-color: #02125a;
-  color: lightgray !important;
-}
-
 .expe .expe-conten a {
   display: inline-block;
   background: #0432ff;
@@ -797,5 +792,40 @@ h3::selection {
 .footer-mini span::selection {
   background: #222;
   color: #fff;
+}
+
+.tooltip {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 500%;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+          transform: translateX(-50%) rotate(-90deg);
+  background: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 5px 5px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 104%;
+  top: 20%;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+          transform: translateX(-50%) rotate(-90deg);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+}
+
+.more-info:hover .tooltip {
+  top: 500%;
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=gastronomia.css.map */

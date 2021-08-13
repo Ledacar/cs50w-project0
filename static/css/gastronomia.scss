@@ -415,11 +415,6 @@ tr:nth-child(even){
     background: $color-lightop;
 }
 
-tr:hover td{
-    background-color: $span-color;
-    color: $color-light !important;
-}
-
 .expe .expe-conten a{
     display: inline-block;
     background: $color-blue;
@@ -747,4 +742,37 @@ h3::selection{
 .footer-mini span::selection{
     background:$color-dark;
     color: $colo-white;
+}
+
+.tooltip{
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 500%;
+    transform: translateX(-50%) rotate(-90deg);
+    background: $color-black;
+    color: $colo-white;
+    white-space: nowrap;
+    padding: 5px 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+.tooltip::before{
+    content: "";
+    position: absolute;
+    left: 104%;
+    top: 20%;
+    transform: translateX(-50%) rotate(-90deg);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000 ; 
+}
+
+.more-info:hover .tooltip{
+    top: 500%;
+    visibility: visible;
+    opacity: 1;
 }

@@ -513,13 +513,13 @@ footer {
   width: 400px;
   height: 260px;
   margin-bottom: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .familiares .familiares-content .left img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .familiares .familiares-content .right img {
@@ -530,13 +530,13 @@ footer {
   width: 400px;
   height: 260px;
   margin-bottom: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .familiares .familiares-content .right img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 /* fiesteros style */
@@ -955,5 +955,40 @@ h3::selection {
 .footer-mini span::selection {
   background: #222;
   color: #fff;
+}
+
+.tooltip {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 500%;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+          transform: translateX(-50%) rotate(-90deg);
+  background: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 5px 5px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 104%;
+  top: 20%;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+          transform: translateX(-50%) rotate(-90deg);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+}
+
+.more-info:hover .tooltip {
+  top: 500%;
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
