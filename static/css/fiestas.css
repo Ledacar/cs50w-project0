@@ -420,55 +420,78 @@ footer {
   background: #000;
 }
 
-.expe .expe-conten .card {
-  width: calc(33% - 20px);
-  background: #222;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 10px;
-  padding: 20px 25px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  margin-bottom: 30px;
+.expe .expe-conten .left img {
+  height: 400px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
 }
 
-.expe .expe-conten .card:hover {
-  background: #0432ff;
+.expe .expe-conten .right {
+  width: 50%;
 }
 
-.expe .expe-conten .card .box {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.expe .expe-conten .right .text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-.expe .expe-conten .card:hover .box {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.expe .expe-conten .card:hover a {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  color: #000;
-}
-
-.expe .expe-conten .card i {
-  font-size: 50px;
+.expe .expe-conten .right .text span {
   color: #0432ff;
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
 }
 
-.expe .expe-conten .card:hover i {
+.expe .expe-conten .right p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.expe .expe-conten p {
+  top: 40px;
+  text-align: justify;
+}
+
+.expe .expe-conten .right a {
+  display: inline-block;
+  background: #0432ff;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #0432ff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.expe .expe-conten table {
+  background: lightgray;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.expe .expe-conten td, th {
+  padding: 10px;
+}
+
+thead {
+  background: #0432ff;
+  border-bottom: solid 6px #02125a;
+}
+
+thead tr {
   color: #fff;
 }
 
-.expe .expe-conten .card .text {
-  font-size: 20px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
+.expe .expe-conten td {
+  color: #222;
+}
+
+tr:nth-child(even) {
+  background: rgba(158, 157, 157, 0.349);
 }
 
 /* familiar style */
@@ -757,9 +780,22 @@ footer .footer-mini i {
         -ms-flex: 100%;
             flex: 100%;
   }
-  .expe .expe-conten .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+  .expe .expe-conten .column {
+    width: 100%;
+  }
+  .expe .expe-conten .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .expe .expe-conten .right {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
   .familiares .familiares-content .column {
     width: 100%;

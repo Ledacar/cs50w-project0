@@ -397,98 +397,48 @@ footer{
     background: $color-black;
 }
 
-.expe .expe-conten .card{
-    width: calc(33% - 20px);
-    background: $color-dark;
-    align-items: center;
-    border-radius: 10px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    margin-bottom: 30px;
+.expe .expe-conten .left img{
+    height: 400px;
+    width: 400px;      
+    object-fit: cover;  
+    border-radius: 15px;
 }
 
-.expe .expe-conten .card:hover{
-    background: $color-blue;
+.expe .expe-conten .right{
+    width: 50%;
 }
 
-.expe .expe-conten .card .box{
-    transition: all 0.5s ease;
+.expe .expe-conten .right .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-.expe .expe-conten .card:hover .box{
-    transform: scale(1.05);
-}
-
-.expe .expe-conten .card:hover a{
-    transform: scale(1.05);
-    color: $color-black;
-}
-
-.expe .expe-conten .card i{
-    font-size: 50px;
+.expe .expe-conten .right .text span{
     color: $color-blue;
-    transition: color 0.5s ease;
 }
 
-.expe .expe-conten .card:hover i{
+.expe .expe-conten .right p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.expe .expe-conten p{
+    top: 40px;
+    text-align: justify;
+}
+
+.expe .expe-conten .right a{
+    display: inline-block;
+    background: $color-blue;
     color: $colo-white;
-}
-
-.expe .expe-conten .card .text{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-
-/* familiar style */
-
-.familiares .familiares-content .column{
-    width: calc(50% - 30px);
-    margin-bottom: 50px;
-}
-
-.familiares .familiares-content .left .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
-}   
-
-.familiares .familiares-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
-}   
-
-.familiares .familiares-content .left img{
-    align-items: center;
-    justify-items: center;
-    width: 400px;
-    height: 260px;
-    margin-bottom: 15px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid $color-blue;
     transition: all 0.5s ease;
-}
-
-.familiares .familiares-content .left img:hover{
-    transform: scale(1.05);
-    
-}
-
-.familiares .familiares-content .right img{
-    align-items: center;
-    justify-items: center;
-    width: 400px;
-    height: 260px;
-    margin-bottom: 15px;
-    transition: all 0.5s ease;
-}
-
-.familiares .familiares-content .right img:hover{
-    transform: scale(1.05);
-    
 }
 
 /* footer style */
@@ -724,9 +674,18 @@ footer .footer-mini i{
         flex: 100%;
     }
 
-    .expe .expe-conten .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
+    .expe .expe-conten .column{
+        width: 100%;
+    }
+
+    .expe .expe-conten .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .expe .expe-conten .right{
+        flex: 100%;
     }
 
     .familiares .familiares-content .column{
