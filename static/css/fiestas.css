@@ -466,88 +466,6 @@ footer {
   transition: all 0.5s ease;
 }
 
-.expe .expe-conten table {
-  background: lightgray;
-  text-align: center;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.expe .expe-conten td, th {
-  padding: 10px;
-}
-
-thead {
-  background: #0432ff;
-  border-bottom: solid 6px #02125a;
-}
-
-thead tr {
-  color: #fff;
-}
-
-.expe .expe-conten td {
-  color: #222;
-}
-
-tr:nth-child(even) {
-  background: rgba(158, 157, 157, 0.349);
-}
-
-/* familiar style */
-.familiares .familiares-content .column {
-  width: calc(50% - 30px);
-  margin-bottom: 50px;
-}
-
-.familiares .familiares-content .left .text {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.familiares .familiares-content .right .text {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.familiares .familiares-content .left img {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  width: 400px;
-  height: 260px;
-  margin-bottom: 15px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.familiares .familiares-content .left img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.familiares .familiares-content .right img {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  width: 400px;
-  height: 260px;
-  margin-bottom: 15px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.familiares .familiares-content .right img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 /* footer style */
 footer {
   background: #222222;
@@ -868,22 +786,12 @@ footer p::selection {
   color: #0432ff;
 }
 
-h3::-moz-selection {
+h3::-moz-selection, .footer-mini::-moz-selection {
   background: #222;
   color: #0432ff;
 }
 
-h3::selection {
-  background: #222;
-  color: #0432ff;
-}
-
-.footer-mini::-moz-selection {
-  background: #222;
-  color: #0432ff;
-}
-
-.footer-mini::selection {
+h3::selection, .footer-mini::selection {
   background: #222;
   color: #0432ff;
 }

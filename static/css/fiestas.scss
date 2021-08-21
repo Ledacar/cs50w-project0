@@ -733,9 +733,11 @@ p::selection{
     background:$colo-white;
     color: $color-blue;
 }
-footer p::selection{
-    background:$color-dark;
-    color: $color-blue;
+footer {
+    p::selection{
+        background:$color-dark;
+        color: $color-blue;
+    }
 }
 
 .footer-mini p::selection{
@@ -743,14 +745,17 @@ footer p::selection{
     color: $color-blue;
 }
 
-h3::selection{
+%selection{
     background:$color-dark;
     color: $color-blue;
 }
 
+h3::selection{
+    @extend %selection;
+}
+
 .footer-mini::selection{
-    background:$color-dark;
-    color: $color-blue;
+    @extend %selection;
 }
 
 .footer-mini span::selection{

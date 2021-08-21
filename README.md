@@ -29,3 +29,5 @@ Es un video sacado de YT donde nos explica más sobre la artesanía.
 El footer es el mismo en todas las páginas.
 
 Al igual en esta página tenemos el mismo botón a la derecha inferior donde podemos redigir a las siguientes páginas.
+
+
