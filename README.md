@@ -30,4 +30,6 @@ El footer es el mismo en todas las páginas.
 
 Al igual en esta página tenemos el mismo botón a la derecha inferior donde podemos redigir a las siguientes páginas.
 
+La página de gastronomía y fiestas.
 
+Se utilaza lo mismo que que en la principal solo que con distintas propiedades.
